@@ -5,25 +5,29 @@ import pandas as pd
 
 data=[]
 
-csv = pd.read_csv('Reptil.csv')
+csv = pd.read_csv('Reptile-Museum/data/Reptil.csv')
 
-for folder in os.listdir('augimg'):
-    i=0
-    for images in os.listdir(f'augimg/{folder}'):
-        imgpath = f'augimg/{folder}/{images}'
-        type = csv['Species'][i]
-        name = csv['Name'][i]
-        s_n = csv['Scientific_Name'][i]
-        cs = csv['Conservation_Status'][i]
-        habi = csv['habitat'][i]
-        color = csv['Color'][i]
-        found_in = csv['Found_In'][i]
-        diet = csv['Diet'][i]
+
+for folder in os.listdir('Reptile-Museum/augimg'):
+    
+    new_df = csv[csv['Scientific_Name'] == folder]
+
+
+    for images in os.listdir(f'Reptile-Museum/augimg/{folder}'):
         
-        data.append([imgpath,type,name,s_n,cs,habi,color,found_in,diet])
-
+        imgpath = f'Reptile-Museum/augimg/{folder}/{images}'
+        Type = new_df['Species'].values[0]
+        name = new_df['Name'].values[0]
+        s_n = new_df['Scientific_Name'].values[0]
+        cs = new_df['Conservation_Status'].values[0]
+        habi = new_df['habitat'].values[0]
+        color = new_df['Color'].values[0]
+        found_in = new_df['Found_In'].values[0]
+        diet = new_df['Diet'].values[0]
+        data.append([imgpath,Type,name,s_n,cs,habi,color,found_in,diet])
+        print(f'{folder}    kaj hoitese')
+    
 data = pd.DataFrame(data,columns=['Image','Type','Name','Scientific Name','Conservation Status','Habitant','Color','Found In','Diet'])
 data = data.sample(frac=1,random_state=42)
-
-data.to_csv('final_data.csv',index=False)
+data.to_csv('Reptile-Museum/data/final_data.csv',index=False)
 
