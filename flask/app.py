@@ -18,7 +18,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
 app = Flask(__name__)
-UPLOAD_FOLDER = 'flask/static/upload/' 
+UPLOAD_FOLDER = 'static/upload/' 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -34,7 +34,7 @@ def main_page():
             x,y,aud = api(f'{UPLOAD_FOLDER}{filename}')
             audio = gTTS(text=aud, lang="en", slow=False)
             
-            audio.save(f'flask/static/audio/{filename}.mp3')
+            audio.save(f'static/audio/{filename}.mp3')
             
             return render_template('home_page.html',label = x,value=y,image=f'upload/{filename}',audio = f'audio/{filename}.mp3')
         return render_template('home_page.html',label = '',value='',image='', audio='')
@@ -42,8 +42,8 @@ def main_page():
         return render_template('home_page.html',label = '',value='',image='',audio='')
 
 def api(path):  
-    model_path  = 'flask/multi_target_resnet34.pkl'
-    helper_csv  = 'flask/info.csv'
+    model_path  = 'multi_target_resnet34.pkl'
+    helper_csv  = 'info.csv'
     df =  pd.read_csv(helper_csv)
     model = load_learner(model_path)
     pred,_,probability = model.predict(path)
