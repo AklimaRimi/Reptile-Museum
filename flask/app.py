@@ -9,7 +9,6 @@ from fastai import *
 import torch
 import pathlib 
 import pandas as pd
-
 from gtts import gTTS
 
 
@@ -43,8 +42,8 @@ def main_page():
         return render_template('home_page.html',label = '',value='',image='',audio='')
 
 def api(path):  
-    model_path  = 'models/multi_target_resnet34.pkl'
-    helper_csv  = 'data/info.csv'
+    model_path  = 'flask/multi_target_resnet34.pkl'
+    helper_csv  = 'flask/info.csv'
     df =  pd.read_csv(helper_csv)
     model = load_learner(model_path)
     pred,_,probability = model.predict(path)
