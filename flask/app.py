@@ -12,11 +12,6 @@ import pandas as pd
 from gtts import gTTS
 
 
-
-
-temp = pathlib.PosixPath 
-pathlib.PosixPath = pathlib.WindowsPath
-
 app = Flask(__name__)
 UPLOAD_FOLDER = 'static/upload/' 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
