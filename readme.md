@@ -28,10 +28,20 @@
   for training I use 3 types of models, `resnet50`, `resnet34`, `xresnet18deeper`, and I save the best model as `pkl` for future use.
 
 # Final Model Selection
+  As I use 3 types of models here is their best results..<br>  
+   |   Model       |     Accuracy|   F1_score | Precision |  Time  |
+  |---------------|-------------|-------------|-----------|--------|
+  | Resnet50      |      .9981  |   0.930426  |  0.970514 |  08:20 |
+  | Resnet34      |     0.998095|	0.927186	  | 0.956563	|  07:31 | 
+  | xresnet18_deeper |  0.977500|	0.023208	  |  0.068224	| 05:40  |
+
+  As `resnet50` and `resnet34` both reach `99%` Accuracy and another score is way close but `resnet34` is little bit faster. So I chose `resnet34` for further work.
 
 # Inside of Final Model Training/ Analysis
+  For analysis on what is going on during training The model, I use `Weight and Bias` and create dashboard. [Here it is](https://api.wandb.ai/links/aklimarimi7/xmsibkbh).
 
 # Model size Compression
+  
 
 # Deployment
 
@@ -66,4 +76,4 @@
 
  , Wikipedia , Openai
 
-weight and bias dashboard: https://api.wandb.ai/links/aklimarimi7/xmsibkbh
+weight and bias dashboard: 
