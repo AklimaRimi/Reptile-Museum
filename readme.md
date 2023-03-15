@@ -69,26 +69,3 @@
  # Conclusion
    I have completed this project like I wanted. If you want to develop more just send me pull request. Thanks.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- , Wikipedia , Openai
-
-weight and bias dashboard: 
