@@ -49,13 +49,25 @@
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/hf.png)
 
 # Interfence 
+  As this app is an educational app, So I've decided make is free for all. So I made simple `UI` using `Flask` and render it in `render.com` website. This website is free with conditions. 
+  
+  ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/front.png)
+  
+  ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/back.png)
+  
+   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates Unseen Images Using `Promte`.
+   * Here I also used `Google Text To Speech` AI for kids who can not read but has curious mind to know about `Reptile`. Audio generates in `Real Time`  
 
-# Problem That I've faced
-
-# How did I Overcame roadblocks
-
-# Conclusion
-
+# Problem That I've faced and How did I Overcame roadblocks
+  Of course, I've faced so many obstacles to build this website. 
+  
+  First of all, setup the `Dataloader`. There have a few resourses that I found for `Multi-Target` Image classifier. I've experiment lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I belive this will also work for Regression.
+  
+  Secondly, I messed up to choose right metric(s), finally I use `accuracy_multi`. This metric works not only good for `multi-label` classification but also  `Multi-Target` classification. I also used `F1_score` and `Precision` for better understaning about my model.
+  
+  
+ # Conclusion
+   I have completed this project like I wanted. If you want to develop more just send me pull request. Thanks.
 
 
 
