@@ -41,9 +41,12 @@
   For analysis on what is going on during training The model, I use `Weight and Bias` and create dashboard. [Here it is](https://api.wandb.ai/links/aklimarimi7/xmsibkbh).
 
 # Model size Compression
-  
+  Model Compression is very essential, because we as developer want to reduce or manage app size. In that case, I use  `onnx` for model size compression. It also make faster the model.  
 
 # Deployment
+  `HuggingFace` is the platform where I deployed my project. You can see this from [here](https://huggingface.co/spaces/Rimi98/Reptile-Museum).
+  
+  ![](https://github.com/AklimaRimi/Reptile-Museum/tree/main/output_images)
 
 # Interfence 
 
