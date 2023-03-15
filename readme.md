@@ -46,7 +46,7 @@
 # Deployment
   `HuggingFace` is the platform where I deployed my project. You can see this from [here](https://huggingface.co/spaces/Rimi98/Reptile-Museum).
   
-  ![](https://github.com/AklimaRimi/Reptile-Museum/tree/main/output_images)
+  ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/hf.png)
 
 # Interfence 
 
