@@ -38,7 +38,7 @@
   As `resnet50` and `resnet34` both reach `99%` Accuracy and another score is way close but `resnet34` is a little bit faster. So I chose `resnet34` for further work.
 
 # Inside of Final Model Training/ Analysis
-  For analysis on what is going on during training The model, I use `Weight and Bias` and create a dashboard. [Here it is](https://api.wandb.ai/links/aklimarimi7/xmsibkbh).
+  For analysis on what is going on during training The model, I use `Weight and Bias` and create a dashboard. [Here it is](https://wandb.ai/aklimarimi7/Reptile-Museum?workspace=user-aklimarimi7).
 
 # Model size Compression
   Model Compression is very essential, because we as developers want to reduce or manage app size. In that case, I use  `onnx` for model size compression. It also makes faster the model.  
