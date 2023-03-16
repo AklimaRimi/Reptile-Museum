@@ -5,7 +5,7 @@
   The purpose of this project is to create an app to know better about any kind of reptile around the world. It is also kid friendly. Just input an image of a reptile( such as Crocodile, Lizards, Snake, Turtle) this app will show you all the information such as `Name`, `Scientific Name`,`Type`,  generally where the reptile `Live`, `Color`, `Food Habit`, `Conservation Status`, `Habitat` in a basic way.
   
 # Machine Learning Method
-  My goal is to user apply an input as Image and get 8 outputs. So this is the reason I have to choose `Multi-Target` Image Classification method as Backbone. 
+  My goal is for the user to apply an input as an image and receive 8 outputs. So this is the reason I have to choose `Multi-Target` Image Classification method as Backbone. 
   
   ### **Why did I choose Machine Learning when I can use Normal Data Structure/ Code?**
   
