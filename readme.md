@@ -20,7 +20,7 @@
 
 # Data Preprocessing and Increase Dataset
 
-  As you find out that my dataset is tiny and Google image contains few of images for particular species, I generate more Images based on few images, I use 8 types of `Augmentation`(Rotate,Brightness,Flip etc) to increase this dataset and after all of this my current data size is `45767` . [Dataset](https://github.com/AklimaRimi/Reptile-Museum/blob/main/data/final_csv.csv)
+  As you can see, my dataset is small, and Google Images only has a few images for specific species, I generated more Images based on few images, I use 8 types of `Augmentation`(Rotate,Brightness,Flip etc) to increase this dataset and after all of this my current data size is `45767` . [Dataset](https://github.com/AklimaRimi/Reptile-Museum/blob/main/data/final_csv.csv)
   
 # Model Training
   For the rest of the tasks like training, testing, compression I choose `Fastai` `Pytorch` to get better performance and time effect.
