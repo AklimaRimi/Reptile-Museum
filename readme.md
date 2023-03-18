@@ -18,14 +18,18 @@
   2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected.
   3. According to `Name` I collected Images. Basically, I scrape Images from Google photos using `Selenium`. Almost 50 images collected for each `Name`.
 
-# Data Preprocessing and Increase Dataset
+# Data Preprocessing and Image Augmentation
 
-  As you can see, my dataset is small, and Google Images only has a few images for specific species, I generated more Images based on few images, I use 8 types of `Augmentation`(Rotate,Brightness,Flip etc) to increase this dataset and after all of this my current data size is `45767` . [Dataset](https://github.com/AklimaRimi/Reptile-Museum/blob/main/data/final_csv.csv)
+  As you can see, my dataset is small, and Google Images only has a few images for specific species, I generated more Images based on few images like `6539` images collected, I use 8 types of `Augmentation`(Rotate,Brightness,Flip etc) to increase this dataset and after all of this my current data size is `45767` . [Dataset](https://github.com/AklimaRimi/Reptile-Museum/blob/main/data/final_csv.csv)
   
 # Model Training
   For the rest of the tasks like training, testing, compression I choose `Fastai` `Pytorch` to get better performance and time effect.
   
   For training I use 3 types of models, `resnet50`, `resnet34`, `xresnet18deeper`, and I save the best model as `pkl` for future use.
+  
+  Also I did some experiments using `batch size`. I used 3 different batch sizes to see if there have any tiny affect on model accuracy. 
+  
+  `Batch size` = 16, which made the model training process very slow and low-accurate. <br>  `Batch size` = `32`, made the model training process faster with the highest accuracy. <br>  `Batch size` = 64, it gave the fastest training process but was not as accurate as bs = 32.
 
 # Final Model Selection
   As I use 3 types of models here is their best results..<br>  
@@ -48,17 +52,17 @@
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/hf.png)
 
-# Interference 
+# Interface
   As this app is an educational app, I've decided to make it free for all. So I made a simple `UI` using `Flask` and rendered it on the `render.com` website. This website is free with conditions. 
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/front.png)
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/back.png)
   
-   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates Unseen Images Using `Promote`.
+   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates Unseen Images Using `Promote` .The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>.
    * Here I also used `Google Text To Speech` AI for kids who can not read but has curious mind to know about `Reptile`. Audio generates in `Real Time`  
 
-# Problem That I've faced and How did I Overcame roadblocks
+# Problem That I've faced and How did I Overcome 
   Of course, I've faced so many obstacles to build this website. 
   
   First of all, set up the `Dataloader`. There are a few resources that I found for `Multi-Target` Image classifier. I've experimented a lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I believe this will also work for Regression.
