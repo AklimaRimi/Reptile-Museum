@@ -12,7 +12,7 @@
   If I use Data Structure / Algorithm / Explicite code, This will need huge data for individual species. Also Image Analysis is much more complex without ML. This is the reason I chose Machine Learning for Image classification.  
 
 # Data Collection
-  I collected my data with the help of `google`, `ChatGPT`.
+  I collected my data with the help of `google`, `ChatGPT`.<br>
   
   1. Collected Reptile `Type` names around the world. Currently I choose Crocodile, Lizard, Snake, Turtle.<br>
   2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected. <br>
