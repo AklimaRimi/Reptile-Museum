@@ -57,11 +57,11 @@
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/back.png)
   
-   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promt" The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>.
-   * Here, I also used `Google Text To Speech` AI for kids who cannot read but have a curious mind and want to know about `Reptile`. Audio generates in `Real Time`  
+   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promt" The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>
+   * Here, I also used `Google Text To Speech` AI for kids who cannot read but have a curious mind and want to know about `Reptile`. Audio generates in `Real Time`  
 
 # Problem That I've faced and How did I Overcome 
-   Of course, I've faced so many obstacles to building this website.<br><br>First of all, set up the `Dataloader`. There are a few resources that I found for `Multi-Target` Image classifier. I've experimented in a lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I believe this will also work for regression.<bt>Secondly, I messed up to choose the right metric(s), finally I used `accuracy_multi`. This metric works not only well for `multi-label` classification but also  `Multi-Target` classification. I also used `F1_score` and `Precision` for a better understanding of my model.
+   Of course, I've faced so many obstacles to building this website.<br><br>First of all, set up the `Dataloader`. There are a few resources that I found for `Multi-Target` Image classifier. I've experimented in a lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I believe this will also work for regression.<br>Secondly, I messed up to choose the right metric(s), finally I used `accuracy_multi`. This metric works not only well for `multi-label` classification but also  `Multi-Target` classification. I also used `F1_score` and `Precision` for a better understanding of my model.
   
   
  # Conclusion
