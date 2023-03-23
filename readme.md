@@ -14,8 +14,8 @@
 # Data Collection
   I collected my data with the help of `google`, `ChatGPT`.
   
-  1. Collected Reptile `Type` names around the world. Currently I choose Crocodile, Lizard, Snake, Turtle.
-  2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected.
+  1. Collected Reptile `Type` names around the world. Currently I choose Crocodile, Lizard, Snake, Turtle.<br>
+  2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected. <br>
   3. According to `Name` I collected images. Basically, I scrape images from Google Photos using `Selenium`. Almost 50 images collected for each `Name`.
 
 # Data Preprocessing and Image Augmentation
