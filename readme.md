@@ -12,11 +12,11 @@
   If I use Data Structure / Algorithm / Explicite code, This will need huge data for individual species. Also Image Analysis is much more complex without ML. This is the reason I chose Machine Learning for Image classification.  
 
 # Data Collection
-  I collected my data with the help of `google`, `ChatGPT`.<br>
-  
-  1. Collected Reptile `Type` names around the world. Currently I choose Crocodile, Lizard, Snake, Turtle.<br>
-  2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected. <br>
-  3. According to `Name` I collected images. Basically, I scrape images from Google Photos using `Selenium`. Almost 50 images collected for each `Name`.
+  I collected my data with the help of `google`, `ChatGPT`.
+  
+1. Collected Reptile `Type` names around the world. Currently I choose Crocodile, Lizard, Snake, Turtle.<br>
+2. For the individual `Type` I have collected `Name` of all species Also their `Scientific Name`, `conservation Status`,`Habitat`,`Found In`, `Color`, `Diet`. Using *Wikipedia*,*National Geographic website*, [link](https://www.crocodilesoftheworld.co.uk/conservation/conservation-status/) and *ChatGPT* I ensured, my data is Correct or not. All data I have collected manually. `108` Species information is  collected. <br>
+3. According to `Name` I collected images. Basically, I scrape images from Google Photos using `Selenium`. Almost 50 images collected for each `Name`.
 
 # Data Preprocessing and Image Augmentation
 
@@ -27,12 +27,10 @@
   
   For training, I use 3 types of models, `resnet50`, `resnet34`, `xresnet18deeper`, and I save the best model as `pkl` for future use.
   
-  Also, I did some experiments using `batch size`. I used 3 different batch sizes to see if there was any tiny effect on the model's accuracy. 
-  
-  `Batch size` = 16, which made the model training process very slow and low-accurate. <br>  `Batch size` = `32`, made the model training process faster with the highest accuracy. <br>  `Batch size` = 64, it gave the fastest training process but was not as accurate as bs = 32.
+  Also, I did some experiments using `batch size`. I used 3 different batch sizes to see if there was any tiny effect on the model's accuracy. <br><br>`Batch size` = 16, which made the model training process very slow and low-accurate. <br>`Batch size` = `32`, made the model training process faster with the highest accuracy. <br>`Batch size` = 64, it gave the fastest training process but was not as accurate as bs = 32.
 
 # Final Model Selection
-  As I use 3 types of models here is their best results..<br>  
+  As I used 3 types of models here is their best results..<br>  
    |   Model       |     Accuracy|   F1_score | Precision |  Time  |
   |---------------|-------------|-------------|-----------|--------|
   | Resnet50      |      .9981  |   0.930426  |  0.970514 |  08:20 |
@@ -59,15 +57,11 @@
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/back.png)
   
-   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promote" The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>.
+   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promt" The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>.
    * Here, I also used `Google Text To Speech` AI for kids who cannot read but have a curious mind and want to know about `Reptile`. Audio generates in `Real Time`  
 
 # Problem That I've faced and How did I Overcome 
-   Of course, I've faced so many obstacles to building this website. 
-  
-  First of all, set up the `Dataloader`. There are a few resources that I found for `Multi-Target` Image classifier. I've experimented in a lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I believe this will also work for regression.
-  
-  Secondly, I messed up to choose the right metric(s), finally I used `accuracy_multi`. This metric works not only well for `multi-label` classification but also  `Multi-Target` classification. I also used `F1_score` and `Precision` for a better understanding of my model.
+   Of course, I've faced so many obstacles to building this website.<br><br>First of all, set up the `Dataloader`. There are a few resources that I found for `Multi-Target` Image classifier. I've experimented in a lot of ways and finally `MultiCategoryBlock()` with the parameter `add_na = True`, this is for `Multi-Target` classification, but I believe this will also work for regression.<bt>Secondly, I messed up to choose the right metric(s), finally I used `accuracy_multi`. This metric works not only well for `multi-label` classification but also  `Multi-Target` classification. I also used `F1_score` and `Precision` for a better understanding of my model.
   
   
  # Conclusion
