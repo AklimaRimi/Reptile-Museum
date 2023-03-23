@@ -2,7 +2,7 @@
 # Reptile Museum
 
 # Motive
-  The purpose of this project is to create an app to help people learn more about any kind of reptile around the world. It is also kid friendly. Just input an image of a reptile (such as Crocodile, Lizards, Snake, Turtle) this app will show you all the information such as `Name`, `Scientific Name`,`Type`,  generally where the reptile `Live`, `Color`, `Food Habit`, `Conservation Status`, `Habitat` in a very basic way.
+  The purpose of this project is to create an app to help people learn more about any kind of reptile around the world. It is also kid friendly. Just input an image of a reptile (such as Crocodile, Lizards, Snake, Turtle) this app will show you all the information such as `Name`, `Scientific Name`,`Type`,  generally where the reptile `Commonly found in`, `Color`, `Food Habit`, `Conservation Status`, `Habitat` in a very basic way.
   
 # Machine Learning Method
   My goal is for the user to apply an input as an image and receive 8 outputs. So this is the reason I have to choose the `Multi-Target` Image Classification method as the backbone.  
