@@ -57,7 +57,7 @@
   
   ![](https://github.com/AklimaRimi/Reptile-Museum/blob/main/output_images/back.png)
   
-   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promt" The promte is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>
+   * The `background image` of this website is generated using `Stable Diffusion`. An AI that generates unseen images using "promt" The promt is:  <h3>night view green Amazon deep forest with reptile anime , realistic,Cartoon, mdjrny-v4 style, HQ</h3>
    * Here, I also used `Google Text To Speech` AI for kids who cannot read but have a curious mind and want to know about `Reptile`. Audio generates in `Real Time`  
 
 # Problem That I've faced and How did I Overcome 
