@@ -2,6 +2,10 @@
 # Reptile Museum
 
 # Motive
+
+[](https://github.com/AklimaRimi/Reptile-Museum/assets/59701116/1fc103c4-df93-4dc8-ab4c-2ab1ff2eb1ab)
+
+
   The purpose of this project is to create an app to help people learn more about any kind of reptile around the world. It is also kid friendly. Just input an image of a reptile (such as Crocodile, Lizards, Snake, Turtle) this app will show you all the information such as `Name`, `Scientific Name`,`Type`,  generally where the reptile `Commonly found in`, `Color`, `Food Habit`, `Conservation Status`, `Habitat` in a very basic way.
   
 # Machine Learning Method
